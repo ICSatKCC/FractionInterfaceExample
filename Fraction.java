@@ -7,7 +7,9 @@ import java.lang.Comparable;
  * arithmetic on Fractions. Implements the "FractionInterface" Interface. Syntax: public class
  * ClassName implements InterfaceName{
  * 
- * @author William McDaniel Albritton
+ * Modified for Java 9+ by Lisa Miller
+ * @author Lisa Miller, William McDaniel Albritton
+ * @since 9/16/2021
  */
 public class Fraction implements FractionInterface, Comparable {
 
@@ -16,8 +18,11 @@ public class Fraction implements FractionInterface, Comparable {
   // Syntax: private ClassName variableName;
   // Usually I go ahead and initialize the data field here.
   // This prevents a NullPointerException later on.
-  private Integer numerator = new Integer(0);
-  private Integer denominator = new Integer(1);
+  /*Removed deprecated wrapper constructors 9/21*/
+  /** The Fraction numerator.*/
+  private Integer numerator = Integer.valueOf(0);
+  /** The Fraction denominator. */
+  private Integer denominator = Integer.valueOf(0);
 
   /**
    * Constructor - Used To Create EAch Object & Initialize DAta Fields.
@@ -64,7 +69,7 @@ public class Fraction implements FractionInterface, Comparable {
     // Multiply Both denominators.
     Integer denominator3 = denominator * denominator2;
     // Create (instantiate) new Fraction and reduce to lowest terms
-    FractionInterface result = new Fraction(numerator3, denominator3);
+    Fraction result = new Fraction(numerator3, denominator3);
     result.reduceToLowestTerms();
     return result;
   }
@@ -84,7 +89,7 @@ public class Fraction implements FractionInterface, Comparable {
     // Multiply Both denominators.
     Integer denominator3 = denominator * denominator2;
     // Create (instantiate) new Fraction and reduce to lowest terms
-    FractionInterface result = new Fraction(numerator3, denominator3);
+    Fraction result = new Fraction(numerator3, denominator3);
     result.reduceToLowestTerms();
     return result;
   }
@@ -104,7 +109,7 @@ public class Fraction implements FractionInterface, Comparable {
     // Multiply denominators.
     Integer denominator3 = denominator * denominator2;
     // Create (instantiate) new Fraction and reduce to lowest terms
-    FractionInterface result = new Fraction(numerator3, denominator3);
+    Fraction result = new Fraction(numerator3, denominator3);
     result.reduceToLowestTerms();
     return result;
   }
@@ -124,7 +129,7 @@ public class Fraction implements FractionInterface, Comparable {
     // Multiply den1 * num2.
     Integer denominator3 = denominator * numerator2;
     // Create (instantiate) new Fraction and reduce to lowest terms
-    FractionInterface result = new Fraction(numerator3, denominator3);
+    Fraction result = new Fraction(numerator3, denominator3);
     result.reduceToLowestTerms();
     return result;
   }
