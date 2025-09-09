@@ -1,4 +1,4 @@
-package src.main.java;
+package ICSatKCC;
 
 /**
  * Has data fields for the this.numeratorand this.denominator of a Fraction. Has methods that do basic

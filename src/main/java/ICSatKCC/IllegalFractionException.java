@@ -1,4 +1,4 @@
-package src.main.java;
+package ICSatKCC;
 
 /**
  * An Exception for use with the Fraction class.

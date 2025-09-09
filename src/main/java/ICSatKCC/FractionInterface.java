@@ -1,4 +1,4 @@
-package src.main.java;
+package ICSatKCC;
 
 /**
  * A list of method prototypes that other classes must implement.
