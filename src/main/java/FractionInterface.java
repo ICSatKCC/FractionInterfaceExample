@@ -1,3 +1,5 @@
+package src.main.java;
+
 /**
  * A list of method prototypes that other classes must implement.
  * All methods are by default public, no need to list
@@ -54,8 +56,20 @@ public interface FractionInterface {
 	 */
 	Integer getDenominator();
 
-	/**
-	 * This Is A "Mutator" Method - Used To Set A Data Field.
-	 * 
-	 * @param newNumerator is the first name.
-	// ...existing code...
+ /**
+    * This Is A "Mutator" Method - Used To Set A Data Field.
+    * 
+    * @param newNumerator is the first name.
+    */
+   void setNumerator(Integer newNumerator);
+
+   /**
+    * This Is A "Mutator" Method - Used To Set A Data Field.
+    * 
+    * @param newDenominator is the denominator.
+    * @exception IllegalFractionException if the denominator is zero
+    */
+   void setDenominator(Integer newDenominator) throws IllegalFractionException;
+
+} // End of interface.
+

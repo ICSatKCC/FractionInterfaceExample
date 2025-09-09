@@ -1,3 +1,5 @@
+package src.main.java;
+
 import java.util.Scanner;
 /**
  * Ask user for numerator & denominator of two Fractions. 
@@ -15,7 +17,8 @@ public class FractionCalculator {
 	 * @param arguments is not used
 	 */
 	public static void main(String[] arguments) {
-		Scanner scan = new Scanner(System.in);
+		@SuppressWarnings("resource")
+        Scanner scan = new Scanner(System.in);
 		String s1, s2, s3, s4;
    
 		// Create three Fractions

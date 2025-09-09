@@ -1,3 +1,5 @@
+package src.main.java;
+
 /**
  * An Exception for use with the Fraction class.
  * 
